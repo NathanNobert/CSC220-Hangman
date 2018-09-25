@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gamescreen"
+    android:splitMotionEvents = "false"
+    android:baselineAligned="false"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp"
+    tools:context=".GameScreen">
+
+    <Button
+        android:id="@+id/aButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="keyBoardButtonClicked"
+        android:text="@string/a"
+        android:textColor="#FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline7"
+        app:layout_constraintRight_toLeftOf="@+id/bButton"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <Button
+        android:id="@+id/bButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="keyBoardButtonClicked"
+        android:text="@string/b"
+        android:visibility="visible"
+        app:layout_constraintLeft_toRightOf="@+id/aButton"
+        app:layout_constraintRight_toLeftOf="@+id/cButton"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        android:textColor="#FFFFFF"
+        app:layout_constraintDimensionRatio="w,1:1" />
+
+    <Button
+        android:id="@+id/cButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedbutton"
+        android:onClick="keyBoardButtonClicked"
+        android:text="@string/c"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        android:layout_marginTop="3dp"
+        app:layout_constraintLeft_toRightOf="@+id/bButton"
+        app:layout_constraintRight_toLeftOf="@+id/dButton"
+        android:textColor="#FFFFFF"
+        app:layout_constraintDimensionRatio="w,1:1" />
+
+    <Button
+        android:id="@+id/dButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedbutton"
+        android:onClick="keyBoardButtonClicked"
+        android:text="@string/d"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        android:layout_marginTop="3dp"
+        app:layout_constraintLeft_toRightOf="@+id/cButton"
+        app:layout_constraintRight_toLeftOf="@+id/eButton"
+        android:textColor="#FFFFFF"
+        app:layout_constraintDimensionRatio="w,1:1" />
+
+    <Button
+        android:id="@+id/eButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedbutton"
+        android:onClick="keyBoardButtonClicked"
+        android:text="@string/e"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        android:layout_marginTop="3dp"
+        app:layout_constraintLeft_toRightOf="@+id/dButton"
+        app:layout_constraintRight_toLeftOf="@+id/fButton"
+        android:textColor="#FFFFFF"
+        app:layout_constraintDimensionRatio="w,1:1" />
+
+    <Button
+        android:id="@+id/fButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedbutton"
+        android:onClick="keyBoardButtonClicked"
+        android:text="@string/f"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        android:layout_marginTop="3dp"
+        app:layout_constraintLeft_toRightOf="@+id/eButton"
+        android:textColor="#FFFFFF"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintRight_toLeftOf="@+id/guideline8"
+        android:layout_marginRight="0dp" />
+
+    <Button
+        android:id="@+id/gButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedbutton"
+        android:onClick="keyBoardButtonClicked"
+        android:text="@string/g"
+        android:layout_marginTop="3dp"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:layout_constraintRight_toLeftOf="@+id/hButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="#FFFFFF"
+        app:layout_constraintDimensionRatio="w,1:1" />
+
+    <Button
+        android:id="@+id/hButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedbutton"
+        android:onClick="keyBoardButtonClicked"
+        android:text="@string/h"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        android:layout_marginTop="3dp"
+        app:layout_constraintLeft_toLeftOf="@+id/gButton"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintRight_toRightOf="@+id/iButton"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/iButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedbutton"
+        android:onClick="keyBoardButtonClicked"
+        android:text="@string/i"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        android:layout_marginTop="3dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="@+id/hButton"
+        app:layout_constraintRight_toRightOf="@+id/jButton"
+        app:layout_constraintDimensionRatio="w,1:1" />
+
+    <Button
+        android:id="@+id/jButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedbutton"
+        android:onClick="keyBoardButtonClicked"
+        android:text="@string/j"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        android:layout_marginTop="3dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="@+id/iButton"
+        app:layout_constraintRight_toRightOf="@+id/kButton"
+        app:layout_constraintDimensionRatio="w,1:1" />
+
+    <Button
+        android:id="@+id/kButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedbutton"
+        android:onClick="keyBoardButtonClicked"
+        android:text="@string/k"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        android:layout_marginTop="3dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="@+id/jButton"
+        app:layout_constraintRight_toRightOf="@+id/lButton"
+        app:layout_constraintDimensionRatio="w,1:1" />
+
+    <Button
+        android:id="@+id/lButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedbutton"
+        android:onClick="keyBoardButtonClicked"
+        android:text="@string/l"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        android:layout_marginTop="3dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="@+id/kButton"
+        app:layout_constraintRight_toRightOf="@+id/mButton"
+        app:layout_constraintDimensionRatio="w,1:1" />
+
+    <Button
+        android:id="@+id/mButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedbutton"
+        android:onClick="keyBoardButtonClicked"
+        android:text="@string/m"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        android:layout_marginTop="3dp"
+        app:layout_constraintLeft_toRightOf="@+id/lButton"
+        android:textColor="#FFFFFF"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintDimensionRatio="w,1:1" />
+
+    <Button
+        android:id="@+id/nButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="keyBoardButtonClicked"
+        android:text="@string/n"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:layout_constraintRight_toLeftOf="@+id/oButton"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline7"
+        android:textColor="#FFFFFF"
+        app:layout_constraintDimensionRatio="w,1:1" />
+
+    <Button
+        android:id="@+id/oButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="keyBoardButtonClicked"
+        android:text="@string/o"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:layout_constraintLeft_toRightOf="@+id/nButton"
+        app:layout_constraintRight_toLeftOf="@+id/pButton"
+        android:textColor="#FFFFFF"
+        app:layout_constraintDimensionRatio="w,1:1" />
+
+    <Button
+        android:id="@+id/rButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="keyBoardButtonClicked"
+        android:text="@string/r"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:layout_constraintLeft_toRightOf="@+id/qButton"
+        android:textColor="#FFFFFF"
+        app:layout_constraintRight_toLeftOf="@+id/sButton"
+        app:layout_constraintDimensionRatio="w,1:1" />
+
+    <Button
+        android:id="@+id/qButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="keyBoardButtonClicked"
+        android:text="@string/q"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:layout_constraintLeft_toRightOf="@+id/pButton"
+        app:layout_constraintRight_toLeftOf="@+id/rButton"
+        android:textColor="#FFFFFF"
+        app:layout_constraintDimensionRatio="w,1:1" />
+
+    <Button
+        android:id="@+id/pButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="keyBoardButtonClicked"
+        android:text="@string/p"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:layout_constraintLeft_toRightOf="@+id/oButton"
+        app:layout_constraintRight_toLeftOf="@+id/qButton"
+        android:textColor="#FFFFFF"
+        app:layout_constraintDimensionRatio="w,1:1" />
+
+    <Button
+        android:id="@+id/uButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedbutton"
+        android:onClick="keyBoardButtonClicked"
+        android:text="@string/u"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        android:layout_marginTop="3dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="@+id/tButton"
+        app:layout_constraintRight_toRightOf="@+id/vButton"
+        tools:textColor="@android:color/background_light"
+        app:layout_constraintDimensionRatio="w,1:1" />
+
+    <Button
+        android:id="@+id/tButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedbutton"
+        android:onClick="keyBoardButtonClicked"
+        android:text="@string/t"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        android:layout_marginTop="3dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/uButton"
+        android:textColor="#FFFFFF"
+        app:layout_constraintDimensionRatio="w,1:1" />
+
+    <Button
+        android:id="@+id/sButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="keyBoardButtonClicked"
+        android:text="@string/s"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:layout_constraintLeft_toRightOf="@+id/rButton"
+        android:textColor="#FFFFFF"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintRight_toLeftOf="@+id/guideline8"
+        android:layout_marginRight="0dp" />
+
+    <Button
+        android:id="@+id/xButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedbutton"
+        android:onClick="keyBoardButtonClicked"
+        android:text="@string/x"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        android:layout_marginTop="3dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="@+id/wButton"
+        app:layout_constraintRight_toRightOf="@+id/yButton"
+        app:layout_constraintDimensionRatio="w,1:1" />
+
+    <Button
+        android:id="@+id/wButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="keyBoardButtonClicked"
+        android:text="@string/w"
+        app:layout_constraintLeft_toLeftOf="@+id/vButton"
+        app:layout_constraintRight_toRightOf="@+id/xButton"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        android:textColor="#FFFFFF"
+        app:layout_constraintDimensionRatio="w,1:1" />
+
+    <Button
+        android:id="@+id/vButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/v"
+        android:onClick="keyBoardButtonClicked"
+        android:background="@drawable/roundedbutton"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        android:layout_marginTop="3dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="@+id/uButton"
+        app:layout_constraintRight_toRightOf="@+id/wButton"
+        app:layout_constraintDimensionRatio="w,1:1" />
+
+    <Button
+        android:id="@+id/zButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedbutton"
+        android:onClick="keyBoardButtonClicked"
+        android:text="@string/z"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        android:layout_marginTop="3dp"
+        app:layout_constraintLeft_toRightOf="@+id/yButton"
+        android:textColor="#FFFFFF"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:textColor="@android:color/background_light"
+        app:layout_constraintDimensionRatio="w,1:1" />
+
+    <Button
+        android:id="@+id/yButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedbutton"
+        android:onClick="keyBoardButtonClicked"
+        android:text="@string/y"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        android:layout_marginTop="3dp"
+        app:layout_constraintLeft_toLeftOf="@+id/xButton"
+        app:layout_constraintRight_toRightOf="@+id/zButton"
+        android:textColor="#FFFFFF"
+        app:layout_constraintDimensionRatio="w,1:1" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline2"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="247dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline3"
+        app:layout_constraintGuide_begin="596dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="596dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline4"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="187dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline5"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="127dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline6"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="64dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline7"
+        app:layout_constraintGuide_begin="25dp"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/popupMenuButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/gamemenubutton"
+        android:onClick="showPopup"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/randomWordTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:letterSpacing="0.15"
+        android:lineSpacingExtra="2sp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.533"
+        android:maxLines="1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/hiddenRandomWordTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:letterSpacing="0.15"
+        android:lineSpacingExtra="2sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:maxLines="1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/hangmanImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/start"
+        app:layout_constraintBottom_toTopOf="@+id/randomWordTextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <at.markushi.ui.CircleButton
+        android:id="@+id/hintButton"
+        android:layout_width="87dp"
+        android:layout_height="87dp"
+        android:layout_centerInParent="true"
+        android:onClick="hintButtonClicked"
+        android:src="@drawable/ic_lightbulb_outline_black_24dp"
+        app:cb_color="#6cecce"
+
+        app:cb_pressedRingWidth="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline8"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="25dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="359dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hiddenRandomWordTextView"
+        app:srcCompat="@drawable/keyboard_placer"
+        android:layout_marginTop="10dp"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/difficultyImage"
+        android:layout_width="53dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/onestar"
+        android:layout_marginTop="13dp"
+        app:layout_constraintTop_toBottomOf="@+id/popupMenuButton"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
+

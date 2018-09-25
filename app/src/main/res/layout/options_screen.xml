@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/gamescreen">
+
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Switch
+        android:id="@+id/soundSwitch"
+        android:layout_width="168dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="32dp"
+        android:checked="true"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:text="Sound"
+        android:textColorLink="@android:color/holo_red_dark"
+
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionsText"
+        tools:layout_editor_absoluteX="108dp" />
+
+    <TextView
+        android:id="@+id/optionsText"
+        android:layout_width="99dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="40dp"
+        android:text="OPTIONS"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="143dp" />
+
+</android.support.constraint.ConstraintLayout>
